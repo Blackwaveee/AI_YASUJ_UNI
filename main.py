@@ -1,5 +1,4 @@
 import sys
-
 class Args:
     @staticmethod
     def parse():

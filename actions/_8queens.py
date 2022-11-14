@@ -1,4 +1,3 @@
-import os
 import sys
 sys.path.append("..")
 import helper
@@ -26,17 +25,16 @@ class Chess:
             if sum2 == 2:
                 return False
 
-            sum = 0
+            sum1,sum2 = 0,0
             for j in range(length):
-                sum += mat[i][j]
-                if sum == 2:
+                sum1 += mat[i][j]
+                if sum1 == 2:
                     return False
 
-            sum = 0
-            for j in range(length):
-                sum += mat[j][i]
-                if sum == 2:
+                sum2 += mat[j][i]
+                if sum2 == 2:
                     return False
+
         return True
 
     def put(self,x,y):
