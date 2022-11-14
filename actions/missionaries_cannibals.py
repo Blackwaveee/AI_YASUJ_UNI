@@ -142,15 +142,6 @@ def solve(node,nodes):
 
     return False
 
-
-# tmp = Node([3,3],[0,0])
-# for test in tmp.moves():
-#     test.print()
-
-
-
-
-
 def run(args):
     solved = solve(Node([3,3],[0,0]),Nodes())
     print('solved')
